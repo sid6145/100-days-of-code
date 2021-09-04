@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden;
+}
+
+h2{
+    color: white;
+}
+
+.container{
+    min-height: 100vh;
+    text-align: center;
+    padding: 150px 10px;
+    background-image: url('./drum-kit.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: color-change;
+    animation-duration: 100s;
+    animation-iteration-count:infinite;
+    margin-top: 20px;
+    height: 300px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+
+}
+
+.key{
+    width: 150px;
+    height: 150px;
+    padding: 30px 10px;
+    margin: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    background-color:rgba(245, 255, 255, 0.5);
+    color: rgb(255, 254, 254);
+}
+
+.key p{
+    margin-top: 10px;
+}
+
+.key-press{
+    background-color: white;
+    color: black;
+}
+
+
+/* @keyframes color-change{
+    0% {background-color: rgb(252, 109, 109);}
+    5% {background-color: rgb(243, 71, 71);}
+    10% {background-color: rgb(248, 82, 53);}
+    15% {background-color: rgb(245, 139, 52);}
+    20% {background-color: rgb(243, 116, 12);}
+    25% {background-color: rgb(250, 154, 28);}
+    30% {background-color: rgb(228, 141, 28);}
+    35% {background-color: rgb(113, 248, 165);}
+    40% {background-color: rgb(154, 245, 102);}
+    45% {background-color: rgb(210, 252, 133);}
+    50% {background-color: rgb(224, 247, 99);}
+    55% {background-color: rgb(227, 247, 55);}
+    60% {background-color: rgb(241, 205, 42);}
+    65% {background-color: rgb(245, 188, 102);}
+    70% {background-color: rgb(240, 181, 53);}
+    75% {background-color: rgb(245, 135, 102);}
+    80% {background-color: rgb(224, 33, 33);}
+    85% {background-color: rgb(26, 85, 248);}
+    90% {background-color: rgb(183, 177, 241);}
+    95% {background-color: rgb(253, 2, 170);}
+    100% {background-color: rgb(3, 129, 77);}
+    
+} */
