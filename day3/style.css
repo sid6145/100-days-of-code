@@ -1,0 +1,59 @@
+.anim1{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    animation-name: change-color;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+.anim2{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    margin-top: 10px;
+    animation-name: move-box;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    background-color: red;
+}
+
+.anim3{
+    width: 100px;
+    height: 100px;
+    animation-name: grow;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    background-color: red;
+}
+
+.anim4{
+    width: 30px;
+    height: 50px;
+}
+
+
+@keyframes change-color{
+    from {background-color: blue;}
+    to{background-color: red;}
+}
+
+@keyframes move-box{
+    0%{left: 0px; top: 0px;}
+    10%{left: 100px; top: 0px;}
+    20%{left: 150px; top: 0px}
+    30%{left: 200px; top: 0px;}
+    40%{left: 250px; top: 0px;}
+    50%{left: 350px; top: 0px;}
+    60%{left: 450px; top: 0px;}
+    70%{left: 550px; top: 0px;}
+    80%{left: 650px; top: 0px;}
+    90%{left: 750px; top: 0px;}
+    100%{left: 850px; top: 0px;}
+}
+
+@keyframes grow{
+    0%{width: 150px; height: 150px; background-image: linear-gradient(to right, rgb(236, 231, 231), red)}
+    100%{width: 300px; height: 300px; background-image: linear-gradient(to right, rgb(243, 0, 0), rgb(236, 231, 231));}
+}
+
