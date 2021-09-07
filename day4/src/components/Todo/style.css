@@ -1,6 +1,11 @@
-.todo-container{
-    min-height: 100vh;
+.todo{
     background-color: #10121A;
+    min-height: 100vh;
+
+}
+
+.todo-container{
+   
     display: flex;
     justify-content: center;
 }
