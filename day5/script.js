@@ -58,3 +58,7 @@ array.sort()
 //method checks if atleast one element passes the specified test
 const even = (element) => element % 2 === 0;
 console.log(array.some(even))
+
+//filers and creates new array based on the condition specified
+let numbers = [100, 20, 30, 120,340,65]
+const filteredArray = array.filter(item => item <= 100)
