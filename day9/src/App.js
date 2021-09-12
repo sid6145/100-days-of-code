@@ -7,7 +7,7 @@ function App() {
   const [text, setText] = useState("")
 
   useEffect(() => {
-    fetch(`https:/www.reddit.com/r/${text}.json`).then(res => {
+    fetch(`https://www.reddit.com/r/${text}.json`).then(res => {
       if (res.status != 200){
         console.log('error')
         return;
@@ -29,9 +29,9 @@ function App() {
 
     <div className="posts-container">
       {posts.map((item) => (
-        item.data.url != null ? 
+       
         <Post title={item.data.title} image={item.data.url} link={item.data.permalink}/>
-        : ''
+    
       ))}
     </div>
 
