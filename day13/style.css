@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+h1{
+    margin: 20px 0;
+    color: #2f4858;
+    text-transform: uppercase;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container{
+    min-height: 100vh;
+    text-align: center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.form{
+    padding: 50px;
+    width: 300px;
+    background-color: #a7bed3;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px black;
+    
+}
+
+#submit-btn{
+    border: none;
+    padding: 12px 10px;
+    border-radius: 8px;
+    margin-top: 25px;
+    transition: 0.4s ease;
+    
+}
+
+#submit-btn:hover{
+    cursor: pointer;
+    box-shadow: 2px 2px 5px black;
+}
+
+#range-number{
+    width: 28px;
+    height: 20px;
+    padding: 0 5px;
+    border: none;
+    border-radius: 10px;
+}
+
+#lorem-container{
+    padding: 30px 0;
+}
+
+.lorem-para{
+    font-size: 20px;
+    padding:10px 250px;
+    text-align: left;
+}
