@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/695f5ef538.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <div class="logo">
+          <h4>SIDDHANT</h4>
+        </div>
+
+        <ul>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#projects">PROJECTS</a></li>
+          <li><a href="#skills">SKILLS</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-txt">
+        <h2>Hello! I am Siddhant</h2>
+        <p>I am a Web Developer</p>
+      </div>
+    </header>
+
+    <section id="about">
+      <div class="section-heading">
+        <h2>About</h2>
+      </div>
+      <div class="about-txt">
+        <p>
+          I am a 2020 graduate in Batchlor's of Information Technology, and am
+          currently pursuing certification in full stack development through
+          SOAL (School Of Accelerated Learning). As a Web developer ||
+          Programmer I am always polishing my development skills and love
+          building web sites and working on projects. Apart from coding and web
+          development, I do enjoy playing video games
+        </p>
+      </div>
+      <div class="social-container">
+        <a href="https://github.com/sid6145"
+          ><i class="fab fa-github social-icon"></i
+        ></a>
+        <a href="https://www.linkedin.com/in/deshmukhsiddhant/"
+          ><i class="fab fa-linkedin social-icon"></i
+        ></a>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="section-heading">
+        <h2>Projects</h2>
+      </div>
+
+      <div class="project-container">
+        <div class="project-card">
+          <h3>Mental Chroma</h3>
+          <p>
+            Mental Chroma is a mental wellness application where users can book
+            appointments with therapists and anonymously discuss their issues in
+            the community section.
+          </p>
+          <a href="https://mentalchroma.netlify.app/"><button>Demo</button></a>
+        </div>
+        <div class="project-card">
+          <h3>Ecommerce</h3>
+          <p>
+            Ecommerce application where users can signup and browse products.
+            Users can add products to their carts and also remove them Built
+            with React and firebase.
+          </p>
+          <a href="https://ecommerce-683f9.web.app/"><button>Demo</button></a>
+        </div>
+        <div class="project-card">
+          <h3>Imgur Clone</h3>
+          <p>
+            Imgur clone is a clone of popular image upload webapplication. Using
+            this application users can upload their images and view them. Built
+            with React and firebase.
+          </p>
+          <a href="https://imgur-601aa.web.app/"><button>Demo</button></a>
+        </div>
+      </div>
+    </section>
+    <section id="skills">
+      <div class="section-heading">
+        <h2>Skills</h2>
+      </div>
+      <div class="skill-list">
+        <div class="icon-container">
+          <p>HTML5</p>
+          <div class="skill html">90%</div>
+        </div>
+        <div class="icon-container">
+          <p>CSS3</p>
+          <div class="skill css">85%</div>
+        </div>
+        <div class="icon-container">        
+          <p>JavaScript</p>
+          <div class="skill js">70%</div>
+        </div>
+        <div class="icon-container">         
+          <p>Bootstrap</p>
+          <div class="skill boot">80%</div>
+        </div>
+        <div class="icon-container">
+          <p>React</p>
+          <div class="skill react">70%</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="section-heading">
+        <h2>Contact</h2>
+      </div>
+      <div class="contact-form">
+        <input class="text-box" type="text" placeholder="Enter your email ID" />
+        <textarea class="text-area" placeholder="Enter your message">
+        </textarea>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <h4>Copyright Siddhant 2021</h4>
+    </footer>
+
+    <script>
+      $(document).ready(function(){
+
+        $("a").on('click', function(event) {
+
+
+          if (this.hash !== "") {
+
+            event.preventDefault();
+
+
+            var hash = this.hash;
+
+
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top
+            }, 800, function(){
+
+              window.location.hash = hash;
+            });
+          } 
+        });
+      });
+    </script>
+  </body>
+</html>
